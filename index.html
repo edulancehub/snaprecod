@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snaprecod Studio | Film Production Agency</title>
-    <meta name="description" content="Snaprecod Studio - Bengali and English film, drama and brand content production house.">
+    <title>Snaprecod Studio | বাংলা ফিল্ম প্রোডাকশন</title>
+    <meta name="description" content="Snaprecod Studio - বাংলা ফিল্ম, নাটক ও ব্র্যান্ড কনটেন্ট প্রোডাকশন হাউস।">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
     <header class="site-header">
         <div class="container nav-wrap">
             <a href="#" class="logo"><span class="bolt">⚡</span> SNAPRECOD.STUDIO</a>
@@ -19,17 +20,13 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <nav class="main-nav" id="mainNav">
-                <a href="#home" data-i18n="nav_home">Home</a>
-                <a href="#services" data-i18n="nav_services">What We Do</a>
-                <a href="#process" data-i18n="nav_process">How We Do It</a>
-                <a href="#gallery" class="active" data-i18n="nav_gallery">Gallery</a>
-                <a href="#about" data-i18n="nav_about">Who We Are</a>
-                <a href="#contact" data-i18n="nav_contact">Contact Us</a>
+                <a href="#home">হোম</a>
+                <a href="#services">আমরা যা করি</a>
+                <a href="#process">কাজের ধাপ</a>
+                <a href="#gallery" class="active">গ্যালারি</a>
+                <a href="#about">আমরা কারা</a>
+                <a href="#contact">যোগাযোগ</a>
             </nav>
-            <div class="lang-switch" role="group" aria-label="Language switch">
-                <button id="langEN" class="lang-btn active">EN</button>
-                <button id="langBN" class="lang-btn">বাংলা</button>
-            </div>
             <div class="social-icons">
                 <a href="https://instagram.com/snaprecord.site" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://instagram.com/snaprecord.site" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
@@ -41,52 +38,87 @@
         <section class="hero-banner" id="home">
             <img src="https://images.unsplash.com/photo-1523240795612-9f4c5e86aa37?auto=format&fit=crop&w=1920&q=80" alt="Agency banner">
             <div class="hero-overlay"></div>
-            <h1 data-i18n="hero_title">FILM AGENCY</h1>
-            <p class="hero-sub" data-i18n="hero_sub">Bengali & English creative production for cinema, drama and brands.</p>
+            <h1>বাংলা ফিল্ম স্টুডিও</h1>
+            <p class="hero-sub">সিনেমা, নাটক ও ব্র্যান্ড গল্পকে সিনেম্যাটিক ভিজ্যুয়ালে রূপ দিই।</p>
         </section>
 
         <section class="trust-strip" aria-label="Trusted by">
             <div class="container trust-row">
-                <span data-i18n="trust_1">Trusted for Film & Ad Production</span>
-                <span data-i18n="trust_2">OTT Ready Workflow</span>
-                <span data-i18n="trust_3">4K / 6K Delivery</span>
-                <span data-i18n="trust_4">Color + Sound Finish</span>
-                <span data-i18n="trust_5">Fast Turnaround</span>
+                <span>ফিল্ম ও বিজ্ঞাপন প্রোডাকশনে বিশ্বস্ত</span>
+                <span>OTT রেডি ওয়ার্কফ্লো</span>
+                <span>4K / 6K ডেলিভারি</span>
+                <span>কালার ও সাউন্ড ফিনিশ</span>
+                <span>দ্রুত ডেলিভারি</span>
             </div>
         </section>
 
         <section class="agency-intro" id="about">
             <div class="container intro-grid">
                 <div>
-                    <h2 data-i18n="about_title">Snaprecod is a full-stack visual production studio.</h2>
-                    <p data-i18n="about_text">We produce feature films, drama series, campaign videos, music content, and social-first branded stories with directors, cinematographers, editors, colorists and sound designers under one team.</p>
+                    <h2>Snaprecod একটি পূর্ণাঙ্গ বাংলা ভিজ্যুয়াল প্রোডাকশন স্টুডিও।</h2>
+                    <p>আমরা ফিচার ফিল্ম, নাটক সিরিজ, ক্যাম্পেইন ভিডিও, মিউজিক কনটেন্ট এবং ব্র্যান্ড স্টোরি নির্মাণ করি। পরিচালক, সিনেমাটোগ্রাফার, এডিটর, কালারিস্ট ও সাউন্ড ডিজাইনারসহ এক টিমে প্রোডাকশন সম্পন্ন করি।</p>
                 </div>
                 <div class="stat-cards">
-                    <article><h3>120+</h3><p data-i18n="stat_1">Delivered Projects</p></article>
-                    <article><h3>18</h3><p data-i18n="stat_2">Active Team Members</p></article>
-                    <article><h3>9</h3><p data-i18n="stat_3">Years of Production</p></article>
+                    <article><h3>120+</h3><p>সম্পন্ন প্রোজেক্ট</p></article>
+                    <article><h3>18</h3><p>সক্রিয় টিম সদস্য</p></article>
+                    <article><h3>9</h3><p>বছরের অভিজ্ঞতা</p></article>
                 </div>
             </div>
         </section>
 
         <section class="services-band" id="services">
             <div class="container">
-                <h2 data-i18n="services_title">What We Do</h2>
+                <h2>আমরা যা করি</h2>
                 <div class="services-grid">
                     <article>
                         <i class="fa-solid fa-video"></i>
-                        <h3 data-i18n="service_1_t">Film & Drama Production</h3>
-                        <p data-i18n="service_1_d">Script to screen production with crew, equipment, and post pipeline.</p>
+                        <h3>ফিল্ম ও নাটক প্রোডাকশন</h3>
+                        <p>স্ক্রিপ্ট থেকে স্ক্রিন পর্যন্ত পূর্ণাঙ্গ প্রোডাকশন সাপোর্ট।</p>
                     </article>
                     <article>
                         <i class="fa-solid fa-camera-retro"></i>
-                        <h3 data-i18n="service_2_t">Commercial Campaigns</h3>
-                        <p data-i18n="service_2_d">Brand films and ad creatives for TV, OTT and social platforms.</p>
+                        <h3>কমার্শিয়াল ক্যাম্পেইন</h3>
+                        <p>টিভি, OTT ও সোশ্যাল প্ল্যাটফর্মের জন্য ব্র্যান্ড ভিডিও ও বিজ্ঞাপন।</p>
                     </article>
                     <article>
                         <i class="fa-solid fa-music"></i>
-                        <h3 data-i18n="service_3_t">Music & Culture Visuals</h3>
-                        <p data-i18n="service_3_d">Music videos, cultural documentaries, and event visual films.</p>
+                        <h3>মিউজিক ও কালচারাল ভিজ্যুয়াল</h3>
+                        <p>মিউজিক ভিডিও, কালচারাল ডকুমেন্টারি ও ইভেন্ট ফিল্ম নির্মাণ।</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase-wall">
+            <div class="container">
+                <div class="showcase-head">
+                    <h2>সিনেম্যাটিক শোকেস</h2>
+                    <p>রিয়েল ফিল্মমেকিং স্কেল, শক্তিশালী ফ্রেমিং এবং প্রিমিয়াম পোস্ট-ফিনিশ।</p>
+                </div>
+                <div class="showcase-grid">
+                    <article class="showcase-item tall" style="background-image:url('https://images.unsplash.com/photo-1535016120720-40c646be5580?auto=format&fit=crop&w=1200&q=80');">
+                        <div class="showcase-overlay">
+                            <h3>ফিচার ড্রামা</h3>
+                            <p>চরিত্র, সংঘাত এবং বাস্তব আবেগের গল্প।</p>
+                        </div>
+                    </article>
+                    <article class="showcase-item" style="background-image:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80');">
+                        <div class="showcase-overlay">
+                            <h3>ব্র্যান্ড কমার্শিয়াল</h3>
+                            <p>স্মার্ট ভিজ্যুয়াল ল্যাঙ্গুয়েজে ব্র্যান্ডের ভয়েস।</p>
+                        </div>
+                    </article>
+                    <article class="showcase-item" style="background-image:url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80');">
+                        <div class="showcase-overlay">
+                            <h3>মিউজিক ভিজ্যুয়াল</h3>
+                            <p>রিদম অনুযায়ী কাট, কালার ও মুড।</p>
+                        </div>
+                    </article>
+                    <article class="showcase-item wide" style="background-image:url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1600&q=80');">
+                        <div class="showcase-overlay">
+                            <h3>লোকেশন প্রোডাকশন</h3>
+                            <p>কনসেপ্ট থেকে ফাইনাল মাস্টার পর্যন্ত ফুল পাইপলাইন।</p>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -101,23 +133,23 @@
                 </div>
                 <div class="copy">
                     <h2>snaprecod.lifestyle</h2>
-                    <p data-i18n="lifestyle_1"><strong>Our brand and lifestyle video production showcases your unique story, values, and people.</strong> We build emotional connection through cinematic storytelling and bold visual language.</p>
-                    <p data-i18n="lifestyle_2">Check out some examples below...</p>
+                    <p><strong>আমাদের লাইফস্টাইল ও ব্র্যান্ড ভিডিও আপনার গল্প, মূল্যবোধ ও মানুষকে সামনে আনে।</strong> সিনেম্যাটিক স্টোরিটেলিংয়ের মাধ্যমে আমরা দর্শকের সাথে আবেগের সংযোগ তৈরি করি।</p>
+                    <p>নিচে কিছু কাজ দেখুন...</p>
                 </div>
             </div>
 
             <div class="container card-grid three">
                 <article class="media-card">
                     <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1000&q=80" alt="Gallery item">
-                    <h3 data-i18n="card_1">Children 1st : CMSS Volunteer Promo Video</h3>
+                    <h3>চিলড্রেন ফার্স্ট : ভলান্টিয়ার প্রোমো ভিডিও</h3>
                 </article>
                 <article class="media-card">
                     <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=80" alt="Gallery item">
-                    <h3 data-i18n="card_2">Government Social Campaign : Atmospheric TV Advert</h3>
+                    <h3>সরকারি সামাজিক ক্যাম্পেইন : টিভি বিজ্ঞাপন</h3>
                 </article>
                 <article class="media-card">
                     <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1000&q=80" alt="Gallery item">
-                    <h3 data-i18n="card_3">Healthcare Brand : TV Commercial</h3>
+                    <h3>হেলথকেয়ার ব্র্যান্ড : টিভি কমার্শিয়াল</h3>
                 </article>
             </div>
         </section>
@@ -131,44 +163,78 @@
                 </div>
                 <div class="copy">
                     <h2>snaprecod.locations</h2>
-                    <p data-i18n="locations_1"><strong>We capture authentic moments in diverse settings</strong> from factory floors to outdoor locations, adding context and cinematic depth.</p>
-                    <p data-i18n="locations_2">Check out some examples below...</p>
+                    <p><strong>কারখানা থেকে আউটডোর লোকেশন পর্যন্ত বাস্তব পরিবেশে আমরা ভিজ্যুয়াল গল্প ধারণ করি</strong> এবং প্রতিটি ফ্রেমে সিনেম্যাটিক গভীরতা বজায় রাখি।</p>
+                    <p>নিচে কিছু কাজ দেখুন...</p>
                 </div>
             </div>
 
             <div class="container card-grid three">
                 <article class="media-card">
                     <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1000&q=80" alt="Gallery item">
-                    <h3 data-i18n="card_4">Science Zone - Innovation Showcase</h3>
+                    <h3>সায়েন্স জোন : ইনোভেশন শোকেস</h3>
                 </article>
                 <article class="media-card">
                     <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1000&q=80" alt="Gallery item">
-                    <h3 data-i18n="card_5">Hotel Brand : Presence & Demand Campaign</h3>
+                    <h3>হোটেল ব্র্যান্ড : উপস্থিতি ও ডিমান্ড ক্যাম্পেইন</h3>
                 </article>
                 <article class="media-card">
                     <img src="https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&w=1000&q=80" alt="Gallery item">
-                    <h3 data-i18n="card_6">Public Information Shoot : #BeCourteous</h3>
+                    <h3>জনসচেতনতা শুট : #BeCourteous</h3>
                 </article>
             </div>
         </section>
 
         <section class="process-band" id="process">
             <div class="container">
-                <h2 data-i18n="process_title">How We Do It</h2>
+                <h2>আমরা যেভাবে কাজ করি</h2>
                 <div class="process-grid">
-                    <article><span>01</span><h3 data-i18n="p1_t">Creative Discovery</h3><p data-i18n="p1_d">Brand goals, audience mapping, and script strategy.</p></article>
-                    <article><span>02</span><h3 data-i18n="p2_t">Production Planning</h3><p data-i18n="p2_d">Location, casting, schedule, and shot division.</p></article>
-                    <article><span>03</span><h3 data-i18n="p3_t">Shooting & Direction</h3><p data-i18n="p3_d">High-end capture with dedicated on-set supervision.</p></article>
-                    <article><span>04</span><h3 data-i18n="p4_t">Post & Delivery</h3><p data-i18n="p4_d">Edit, color, sound and multi-platform delivery.</p></article>
+                    <article><span>01</span><h3>ক্রিয়েটিভ ডিসকভারি</h3><p>ব্র্যান্ড লক্ষ্য, অডিয়েন্স ম্যাপিং ও স্ক্রিপ্ট স্ট্র্যাটেজি।</p></article>
+                    <article><span>02</span><h3>প্রোডাকশন পরিকল্পনা</h3><p>লোকেশন, কাস্টিং, শিডিউল ও শট ডিভিশন।</p></article>
+                    <article><span>03</span><h3>শুটিং ও ডিরেকশন</h3><p>উন্নত ক্যাপচার ও অন-সেট সুপারভিশন।</p></article>
+                    <article><span>04</span><h3>পোস্ট ও ডেলিভারি</h3><p>এডিট, কালার, সাউন্ড এবং মাল্টি-প্ল্যাটফর্ম ডেলিভারি।</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners-band" aria-label="Production capabilities">
+            <div class="marquee">
+                <div class="marquee-track">
+                    <span>ডিরেকশন</span>
+                    <span>•</span>
+                    <span>সিনেমাটোগ্রাফি</span>
+                    <span>•</span>
+                    <span>এডিটিং</span>
+                    <span>•</span>
+                    <span>কালার গ্রেড</span>
+                    <span>•</span>
+                    <span>সাউন্ড ডিজাইন</span>
+                    <span>•</span>
+                    <span>VFX সাপোর্ট</span>
+                    <span>•</span>
+                    <span>OTT ডেলিভারি</span>
+                    <span>•</span>
+                    <span>ডিরেকশন</span>
+                    <span>•</span>
+                    <span>সিনেমাটোগ্রাফি</span>
+                    <span>•</span>
+                    <span>এডিটিং</span>
+                    <span>•</span>
+                    <span>কালার গ্রেড</span>
+                    <span>•</span>
+                    <span>সাউন্ড ডিজাইন</span>
+                    <span>•</span>
+                    <span>VFX সাপোর্ট</span>
+                    <span>•</span>
+                    <span>OTT ডেলিভারি</span>
                 </div>
             </div>
         </section>
 
         <section class="contact-cta" id="contact">
             <div class="container cta-wrap">
-                <h2 data-i18n="cta_title">Let’s Build Your Next Film</h2>
+                <h2>আপনার পরবর্তী ফিল্ম প্রোজেক্ট শুরু করি</h2>
                 <p>Instagram: @snaprecord.site</p>
-                <a href="https://instagram.com/snaprecord.site" target="_blank" rel="noopener noreferrer" class="btn" data-i18n="cta_btn">Message on Instagram</a>
+                <a href="https://instagram.com/snaprecord.site" target="_blank" rel="noopener noreferrer" class="btn">ইনস্টাগ্রামে মেসেজ করুন</a>
             </div>
         </section>
     </main>
