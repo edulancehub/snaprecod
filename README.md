@@ -1,0 +1,2 @@
+# snaprecod
+Its privacy policy
